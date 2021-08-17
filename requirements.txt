@@ -11,3 +11,5 @@ pyflakes==2.3.1
 pytz==2021.1
 six==1.16.0
 sqlparse==0.4.1
+ipython
+Faker==8.11.0
