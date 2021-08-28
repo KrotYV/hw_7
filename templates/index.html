@@ -5,12 +5,20 @@
     <title>Django Forms</title>
 </head>
 <body>
-    <form method="POST">
+{{ message_err }}
+{% if side_3 != 0 %}
+
+<p> гипотенуза рава {{ side_3 }}</p>
+
+{% endif %}
+
+    <form action="/triangle/" method="POST">
         {% csrf_token %}
-    <table>
-        {{ form }}
-    </table>
+
+            {{ form.as_p}}
+
     <input type="submit" value="Send" >
-</form>
+    </form>
+
 </body>
 </html>
